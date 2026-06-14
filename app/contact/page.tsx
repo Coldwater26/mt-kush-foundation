@@ -13,7 +13,7 @@ export default function ContactPage() {
           <SectionIntro
             eyebrow="Contact"
             title="Start a community foundation conversation."
-            copy="Reach out about veterans programs, athletics, public education, community support nights, Montana Media, sponsorships, or local partnerships."
+            copy={site.coreMission}
             light
           />
           <div className="relative min-h-[360px] overflow-hidden border-4 border-gold bg-white">

@@ -3,8 +3,13 @@
   url: "https://montanakush.org",
   email: "info@montanakush.org",
   sponsorUrl: "https://montanakush.com",
+  tagline: "Supporting the communities that support us.",
+  coreMission:
+    "The Montana Kush Community Foundation shows up for Montana by supporting veterans, families, local athletics, community events, education, patient access, and neighbors facing real needs close to home.",
+  legalMission:
+    "The Montana Kush Community Foundation supports charitable, educational, health-related, civic, and community-based efforts that improve quality of life for Montanans, including support for veterans, families, youth and adult athletics, emergency needs, public education, patient access, local events, and nonprofit partnerships across Montana.",
   description:
-    "A Montana community foundation supporting veterans, sports and recreation, public education, community events, patient access, Montana Media, Montana Stories, and local partnerships.",
+    "The Montana Kush Community Foundation supports charitable, educational, health-related, civic, and community-based efforts that improve quality of life for Montanans.",
   keywords: [
     "Montana Kush Community Foundation",
     "Montana community foundation",
@@ -20,7 +25,7 @@
     "Montana Kush community partnerships"
   ],
   disclaimer:
-    "The Montana Kush Community Foundation supports Montana veterans, sports and recreation, education, events, Montana Stories, patient access, and community partnerships."
+    "The Montana Kush Community Foundation supports charitable, educational, health-related, civic, and community-based efforts that improve quality of life for Montanans, including support for veterans, families, youth and adult athletics, emergency needs, public education, patient access, local events, and nonprofit partnerships across Montana."
 };
 
 export const navItems = [
@@ -37,12 +42,12 @@ export const pageMeta = {
   about: {
     title: "About",
     description:
-      "Learn why the Montana Kush Community Foundation exists as a public-benefit community institution."
+      "Learn how the Montana Kush Community Foundation supports charitable, educational, health-related, civic, and community-based efforts across Montana."
   },
   programs: {
     title: "Programs",
     description:
-      "Explore program areas for veterans, sports and recreation, public education, Montana Stories, patient access, and community partnerships."
+      "Explore how the Montana Kush Community Foundation shows up for veterans, families, local athletics, community events, education, patient access, and neighbors facing real needs."
   },
   impact: {
     title: "Impact",
@@ -67,12 +72,12 @@ export const pageMeta = {
   contact: {
     title: "Contact",
     description:
-      "Contact the Montana Kush Community Foundation about programs, partnerships, sponsorships, events, media, and public education."
+      "Contact the Montana Kush Community Foundation about programs, partnerships, sponsorships, community events, media, and public education."
   },
   donate: {
     title: "Sponsor / Donate",
     description:
-      "Support Montana veterans, sports and recreation, public education, events, Montana Media, and community partnerships."
+      "Support the Montana Kush Community Foundation as it shows up for veterans, families, local athletics, community events, education, patient access, and neighbors facing real needs."
   },
   merch: {
     title: "Volunteer",

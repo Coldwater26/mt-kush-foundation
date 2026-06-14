@@ -1,7 +1,7 @@
 ﻿import type { Metadata } from "next";
 import { DonationCTA } from "@/components/DonationCTA";
 import { SectionIntro } from "@/components/SectionIntro";
-import { pageMeta } from "@/lib/site";
+import { pageMeta, site } from "@/lib/site";
 
 export const metadata: Metadata = pageMeta.donate;
 
@@ -20,8 +20,8 @@ export default function DonatePage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionIntro
             eyebrow="Sponsor / Donate"
-            title="Support veterans, sports, education, events, and Montana Stories."
-            copy="Use the form to start a conversation about donations, program sponsorships, community activations, in-kind support, or partner opportunities."
+            title={site.tagline}
+            copy={site.coreMission}
             light
           />
         </div>

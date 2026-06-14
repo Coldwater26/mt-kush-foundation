@@ -2,14 +2,14 @@
 import Image from "next/image";
 import { CTASection } from "@/components/CTASection";
 import { SectionIntro } from "@/components/SectionIntro";
-import { pageMeta } from "@/lib/site";
+import { pageMeta, site } from "@/lib/site";
 
 export const metadata: Metadata = pageMeta.about;
 
 const sections = [
   {
     title: "Our Mission",
-    copy: "The Montana Kush Community Foundation helps Montanans gather, compete, learn, serve, and stay connected through veterans programs, sports and recreation, education, events, media, and local partnerships."
+    copy: site.legalMission
   },
   {
     title: "Who We Help",
@@ -41,7 +41,7 @@ export default function AboutPage() {
           <SectionIntro
             eyebrow="About"
             title="Montana community support, built to show up year-round."
-            copy="The Montana Kush Community Foundation supports veterans, sports and recreation, education, community events, Montana Stories, patient access, and local partnerships."
+            copy={site.coreMission}
             light
           />
           <div className="relative min-h-[360px] overflow-hidden border-4 border-gold">

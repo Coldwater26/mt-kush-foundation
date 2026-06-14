@@ -17,7 +17,7 @@ const organizationSchema = {
     url: site.sponsorUrl
   },
   sameAs: [site.sponsorUrl],
-  description: site.description,
+  description: site.legalMission,
   knowsAbout: [
     "Montana Media",
     "Montana Stories",

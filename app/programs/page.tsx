@@ -5,7 +5,7 @@ import { ProgramCard } from "@/components/ProgramCard";
 import { ProgramDetailSection } from "@/components/ProgramDetailSection";
 import { SectionIntro } from "@/components/SectionIntro";
 import { programs } from "@/lib/programs";
-import { pageMeta } from "@/lib/site";
+import { pageMeta, site } from "@/lib/site";
 
 export const metadata: Metadata = pageMeta.programs;
 
@@ -17,7 +17,7 @@ export default function ProgramsPage() {
           <SectionIntro
             eyebrow="Programs"
             title="The Montana Kush Community Foundation shows up for Montana."
-            copy="Veterans programs, athletics and tournaments, public education, community events, Montana Stories, and local partnerships."
+            copy={site.coreMission}
             light
           />
           <div className="relative min-h-[360px] overflow-hidden border-4 border-gold">

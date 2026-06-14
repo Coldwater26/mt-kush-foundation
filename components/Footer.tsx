@@ -9,7 +9,7 @@ export function Footer() {
         <div>
           <FoundationLogo className="w-[250px] sm:w-[324px]" />
           <p className="mt-5 max-w-xl text-sm leading-7 text-cream">
-            Founded with support from Montana Kush, the Community Foundation supports veterans, sports, education, events, Montana Stories, patient access, and community partnerships across Montana.
+            Founded with support from Montana Kush. {site.coreMission}
           </p>
         </div>
         <div>
@@ -37,7 +37,7 @@ export function Footer() {
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-6 text-xs leading-6 text-cream sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
           <p>{site.disclaimer}</p>
-          <p>© 2026 Montana Kush Community Foundation.</p>
+          <p>Copyright 2026 Montana Kush Community Foundation.</p>
         </div>
       </div>
     </footer>

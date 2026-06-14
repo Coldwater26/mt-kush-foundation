@@ -54,7 +54,7 @@ export default function HomePage() {
                 Supported by Montana Kush
               </a>
               <h1 className="mt-10 max-w-[520px] font-serif text-[3rem] font-black leading-[0.96] text-forest sm:text-[3.45rem]">
-                Supporting the communities that support us.
+                {site.tagline}
               </h1>
             </div>
 
@@ -92,13 +92,12 @@ export default function HomePage() {
           <div>
             <p className="text-sm font-black uppercase tracking-[0.14em] text-copper">Mission</p>
             <h2 className="mt-4 font-serif text-4xl font-black leading-none text-forest sm:text-5xl">
-              Help Montana communities show up for each other.
+              The Montana Kush Community Foundation shows up for Montana.
             </h2>
           </div>
           <div className="border-y-2 border-forest">
             <p className="py-7 text-2xl font-semibold leading-10 text-smoke">
-              The Foundation backs the places where Montanans already gather: veteran events, local tournaments,
-              useful education, food-truck nights, Montana Stories, and neighbors doing good work close to home.
+              {site.coreMission}
             </p>
           </div>
         </div>
