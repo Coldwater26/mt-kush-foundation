@@ -9,6 +9,30 @@
   ShieldCheck
 } from "lucide-react";
 
+export const fundingPaths = [
+  {
+    title: "Grants",
+    eyebrow: "Direct Support",
+    icon: HeartHandshake,
+    copy:
+      "Flexible support for nonprofits, local organizers, veteran groups, educators, and community projects doing useful work in Montana."
+  },
+  {
+    title: "Sponsorships",
+    eyebrow: "Community Events",
+    icon: ShieldCheck,
+    copy:
+      "Visible backing for tournaments, food-truck nights, fundraisers, public events, media projects, and partner-led gatherings."
+  },
+  {
+    title: "Scholarships",
+    eyebrow: "Access",
+    icon: BookOpenCheck,
+    copy:
+      "Help with registrations, equipment, education, training, resource access, and participation costs for Montanans who need it."
+  }
+];
+
 export const programs = [
   {
     slug: "veterans-service-community-support",

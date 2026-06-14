@@ -18,7 +18,7 @@ export function ProgramDetailSection({ program }: { program: Program }) {
           <p className="mt-5 text-sm leading-7 text-smoke">{program.purpose}</p>
         </div>
         <div className="bg-parchment p-6">
-          <h3 className="text-sm font-bold uppercase tracking-[0.14em] text-copper">Program initiatives</h3>
+          <h3 className="text-sm font-bold uppercase tracking-[0.14em] text-copper">Grant, sponsorship, and scholarship pathways</h3>
           <ul className="mt-5 grid gap-3">
             {program.initiatives.map((initiative) => (
               <li key={initiative} className="flex gap-3 text-sm leading-7 text-basalt">
