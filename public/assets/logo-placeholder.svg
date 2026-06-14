@@ -1,0 +1,11 @@
+<svg width="260" height="260" viewBox="0 0 260 260" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">MT Kush Foundation logo placeholder</title>
+  <desc id="desc">A circular placeholder mark with Montana mountains.</desc>
+  <rect width="260" height="260" rx="28" fill="#17372D"/>
+  <circle cx="130" cy="130" r="94" fill="#F4EFE3"/>
+  <path d="M42 159L91 100L124 138L153 86L218 159H42Z" fill="#285345"/>
+  <path d="M91 100L109 121L99 119L88 132L74 128L91 100Z" fill="#F4EFE3"/>
+  <path d="M153 86L173 109L160 106L148 124L135 119L153 86Z" fill="#F4EFE3"/>
+  <path d="M57 177H203" stroke="#B56D33" stroke-width="8" stroke-linecap="round"/>
+  <text x="130" y="205" text-anchor="middle" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#17372D">MTK</text>
+</svg>

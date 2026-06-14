@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Arial Black", Impact, "Helvetica Neue", Arial, sans-serif;
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fbf7ed;
+  color: #242826;
+  font-weight: 500;
+}
+
+body::before {
+  pointer-events: none;
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  background-image: linear-gradient(rgba(23, 55, 45, 0.035) 1px, transparent 1px);
+  background-size: 100% 4px;
+  mix-blend-mode: multiply;
+  opacity: 0.12;
+}
+
+::selection {
+  background: #b56d33;
+  color: #fff;
+}
+
+.topo {
+  background-color: rgba(214, 209, 202, 0.08);
+}
+
+.topo-paper {
+  background: linear-gradient(rgba(251, 247, 237, 0.78), rgba(251, 247, 237, 0.82));
+}
+
+.topo-white {
+  background: linear-gradient(rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0.86));
+}
+
+.topo-forest {
+  background: #17372d;
+}
+
+.mk-topographic {
+  background-color: #d6d1ca;
+  background-image: url("/assets/montana-kush-topographic.svg");
+  background-position: center top;
+  background-repeat: repeat;
+  background-size: 1200px 800px;
+}
+
+.mk-topographic-panel {
+  background-color: #d6d1ca;
+  background-image:
+    linear-gradient(rgba(251, 247, 237, 0.78), rgba(251, 247, 237, 0.82)),
+    url("/assets/montana-kush-topographic.svg");
+  background-position: center top;
+  background-repeat: repeat;
+  background-size: auto, 1200px 800px;
+}
+
+.mk-topographic-forest {
+  background-color: #17372d;
+  background-image:
+    linear-gradient(rgba(23, 55, 45, 0.9), rgba(23, 55, 45, 0.9)),
+    url("/assets/montana-kush-topographic.svg");
+  background-position: center top;
+  background-repeat: repeat;
+  background-size: auto, 1200px 800px;
+}
+
+@media (max-width: 640px) {
+  .mk-topographic,
+  .mk-topographic-panel,
+  .mk-topographic-forest {
+    background-size: 900px 600px;
+  }
+}
+
+.field-border {
+  background:
+    linear-gradient(#fbf7ed, #fbf7ed) padding-box,
+    linear-gradient(135deg, rgba(181, 109, 51, 0.55), rgba(199, 155, 69, 0.22), rgba(143, 165, 139, 0.45)) border-box;
+  border: 1px solid transparent;
+}
+
+.mk-heading {
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+.mk-kicker::before {
+  content: "- ";
+}
+
+.mk-outline {
+  -webkit-text-stroke: 1px currentColor;
+  color: transparent;
+}
+
+.mk-slab {
+  box-shadow: inset 0 -6px 0 rgba(90, 127, 113, 0.25);
+}

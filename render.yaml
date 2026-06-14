@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: montana-kush-community-foundation
+    runtime: static
+    buildCommand: npm ci && npm run build
+    staticPublishPath: ./out
+    autoDeployTrigger: commit
+    domains:
+      - www.montanakush.org
+    headers:
+      - path: /*
+        name: X-Frame-Options
+        value: SAMEORIGIN
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff

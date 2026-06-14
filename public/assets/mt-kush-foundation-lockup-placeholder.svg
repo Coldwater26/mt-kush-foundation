@@ -1,0 +1,13 @@
+<svg width="520" height="150" viewBox="0 0 520 150" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">MT Kush Foundation placeholder lockup</title>
+  <desc id="desc">Placeholder lockup for the MT Kush Foundation.</desc>
+  <rect width="520" height="150" rx="10" fill="#FBF7ED"/>
+  <g transform="translate(18 18)">
+    <rect width="112" height="112" rx="16" fill="#17372D"/>
+    <path d="M18 73L40 44L58 64L73 36L97 73H18Z" fill="#F4EFE3"/>
+    <path d="M24 86H90" stroke="#B56D33" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <text x="154" y="58" font-family="Georgia, serif" font-size="34" font-weight="700" fill="#17372D">MT Kush</text>
+  <text x="154" y="96" font-family="Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="4" fill="#B56D33">FOUNDATION</text>
+  <text x="154" y="122" font-family="Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="2" fill="#59625C">ROOTED IN MONTANA</text>
+</svg>

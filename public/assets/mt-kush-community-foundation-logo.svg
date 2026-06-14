@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="162" height="72" viewBox="0 0 162 72" role="img" aria-labelledby="title desc">
+  <title id="title">MT Kush Community Foundation</title>
+  <desc id="desc">MT Kush logo with Community Foundation centered below.</desc>
+  <rect width="162" height="72" fill="none"/>
+  <image href="montana-kush-logo.svg" x="0" y="0" width="162" height="50.6" preserveAspectRatio="xMidYMin meet"/>
+  <text
+    x="81"
+    y="66"
+    text-anchor="middle"
+    font-family="Arial Black, Arial, Helvetica, sans-serif"
+    font-size="10.6"
+    font-weight="900"
+    letter-spacing="1.45"
+    fill="#B56D33"
+  >COMMUNITY FOUNDATION</text>
+</svg>
