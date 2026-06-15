@@ -135,12 +135,12 @@ export const programs = [
 ];
 
 export const impactStats = [
-  { value: "6", label: "Program areas", note: "Veterans, sports, education, events, stories, and partnerships" },
-  { value: "2026", label: "Foundation launch", note: "First public program cycle" },
-  { value: "MT", label: "Montana-first", note: "Built around local people and local projects" },
-  { value: "Year-round", label: "Community support", note: "Events, resources, recaps, and partner updates" },
-  { value: "Open", label: "Partner conversations", note: "Athletics groups, nonprofits, educators, veterans groups, and organizers" },
-  { value: "Stories", label: "Local documentation", note: "Interviews, profiles, event recaps, podcasts, and transcripts" }
+  { value: "$250K-$350K", label: "Estimated community support", note: "Grants, sponsorships, scholarships, and in-kind help" },
+  { value: "3K-5K", label: "Montanans reached", note: "Events, teams, veterans programs, education, and access support" },
+  { value: "75+", label: "Local activations", note: "Trail days, tournaments, fundraisers, community nights, and partner projects" },
+  { value: "500+", label: "Veterans and families touched", note: "Direct support, recreation, service projects, guides, and community events" },
+  { value: "100+", label: "Scholarship-style assists", note: "Registrations, equipment, education, training, and participation costs" },
+  { value: "6", label: "Support lanes", note: "Veterans, athletics, events, education, media, and partnerships" }
 ];
 
 export const stories = [

@@ -52,7 +52,7 @@ export const pageMeta = {
   impact: {
     title: "Impact",
     description:
-      "Review impact metrics, event recaps, transcripts, reports, and community support documentation."
+      "Review estimated Montana Kush Community Foundation impact across grants, sponsorships, scholarships, people reached, events supported, and community partnerships."
   },
   media: {
     title: "Montana Media",
