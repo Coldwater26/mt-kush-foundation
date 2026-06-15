@@ -190,7 +190,7 @@ export default function HomePage() {
           </div>
           <div className="border-l-2 border-gold pl-6">
             <p className="max-w-2xl text-xl font-semibold leading-8 text-cream">
-              Volunteer at Foundation events and community projects. The shirt is for the people who show up.
+              Volunteer at trail days, local events, partner projects, and community-forward work across Montana.
             </p>
             <div className="mt-6">
               <ButtonLink href="/merch" className="bg-gold text-forest hover:bg-cream">
