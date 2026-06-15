@@ -82,7 +82,7 @@ export const pageMeta = {
   merch: {
     title: "Volunteer",
     description:
-      "Volunteer with the Montana Kush Community Foundation and show up for Montana communities."
+      "Volunteer with the Montana Kush Community Foundation at trail days, local events, partner projects, and community-forward work across Montana."
   }
 };
 
