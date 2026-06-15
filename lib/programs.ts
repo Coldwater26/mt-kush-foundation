@@ -1,6 +1,7 @@
 ﻿import {
   BadgeCheck,
   BookOpenCheck,
+  CalendarDays,
   Clapperboard,
   HeartHandshake,
   Landmark,
@@ -30,6 +31,20 @@ export const fundingPaths = [
     icon: BookOpenCheck,
     copy:
       "Help with registrations, equipment, education, training, resource access, and participation costs for Montanans who need it."
+  }
+];
+
+export const programEvents = [
+  {
+    title: "Cannabis for Conservation",
+    date: "Sept. 19, 2026",
+    format: "Frisbee golf tournament",
+    location: "Montana",
+    eyebrow: "Foundation Event",
+    icon: CalendarDays,
+    copy:
+      "A community-forward tournament built around outdoor recreation, conservation support, local sponsorships, volunteer energy, and Montana Stories coverage.",
+    supports: ["Conservation projects", "Local athletics", "Volunteer participation", "Montana Stories recap"]
   }
 ];
 

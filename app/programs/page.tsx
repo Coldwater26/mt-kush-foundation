@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { ButtonLink } from "@/components/ButtonLink";
 import { CTASection } from "@/components/CTASection";
 import { ProgramCard } from "@/components/ProgramCard";
 import { ProgramDetailSection } from "@/components/ProgramDetailSection";
 import { SectionIntro } from "@/components/SectionIntro";
-import { fundingPaths, programs } from "@/lib/programs";
+import { fundingPaths, programEvents, programs } from "@/lib/programs";
 import { pageMeta, site } from "@/lib/site";
 
 export const metadata: Metadata = pageMeta.programs;
@@ -54,6 +55,56 @@ export default function ProgramsPage() {
                     </div>
                     <h3 className="mt-4 font-serif text-3xl font-black leading-none text-forest">{path.title}</h3>
                     <p className="mt-4 text-sm font-semibold leading-7 text-smoke">{path.copy}</p>
+                  </article>
+                );
+              })}
+            </div>
+          </div>
+          <div className="mb-12">
+            <div className="mb-6 flex flex-col justify-between gap-4 border-b-2 border-forest pb-5 sm:flex-row sm:items-end">
+              <div>
+                <p className="text-sm font-black uppercase tracking-[0.14em] text-copper">Events</p>
+                <h2 className="mt-3 font-serif text-4xl font-black leading-none text-forest sm:text-5xl">
+                  Community events on the calendar.
+                </h2>
+              </div>
+              <p className="max-w-md text-base font-semibold leading-7 text-smoke">
+                Events turn grants, sponsorships, scholarships, volunteers, and Montana Stories into something people can join.
+              </p>
+            </div>
+            <div className="grid gap-5">
+              {programEvents.map((event) => {
+                const Icon = event.icon;
+
+                return (
+                  <article key={event.title} className="grid overflow-hidden border-2 border-forest bg-white lg:grid-cols-[0.38fr_0.62fr]">
+                    <div className="bg-forest p-6 text-cream">
+                      <div className="flex items-center justify-between gap-4">
+                        <p className="text-xs font-black uppercase tracking-[0.14em] text-gold">{event.eyebrow}</p>
+                        <Icon aria-hidden size={26} strokeWidth={1.8} />
+                      </div>
+                      <p className="mt-8 font-serif text-5xl font-black leading-none text-cream">{event.date}</p>
+                      <p className="mt-4 text-sm font-black uppercase tracking-[0.1em] text-gold">{event.format}</p>
+                    </div>
+                    <div className="p-6 md:p-8">
+                      <div className="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
+                        <div>
+                          <p className="text-xs font-black uppercase tracking-[0.14em] text-copper">{event.location}</p>
+                          <h3 className="mt-2 font-serif text-4xl font-black leading-none text-forest">{event.title}</h3>
+                        </div>
+                        <ButtonLink href="/contact" className="shrink-0 bg-gold text-forest hover:bg-cream">
+                          Get Involved
+                        </ButtonLink>
+                      </div>
+                      <p className="mt-5 max-w-3xl text-base font-semibold leading-8 text-smoke">{event.copy}</p>
+                      <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+                        {event.supports.map((item) => (
+                          <p key={item} className="border-l-2 border-copper bg-parchment px-4 py-3 text-xs font-black uppercase tracking-[0.08em] text-forest">
+                            {item}
+                          </p>
+                        ))}
+                      </div>
+                    </div>
                   </article>
                 );
               })}
