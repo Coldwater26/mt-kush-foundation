@@ -45,6 +45,17 @@ export const programEvents = [
     copy:
       "A community-forward tournament built around outdoor recreation, conservation support, local sponsorships, volunteer energy, and Montana Stories coverage.",
     supports: ["Conservation projects", "Local athletics", "Volunteer participation", "Montana Stories recap"]
+  },
+  {
+    title: "Montana Kush Derby Car Build",
+    date: "Sept. 11-13, 2026",
+    format: "Helena Septemberfest Soapbox Derby",
+    location: "Downtown Helena",
+    eyebrow: "Volunteer Build",
+    icon: CalendarDays,
+    copy:
+      "Volunteers can help build, paint, prep, and crew the Montana Kush derby car for Septemberfest in downtown Helena.",
+    supports: ["Derby car build crew", "Race day volunteers", "United Way fundraiser", "Downtown Helena community event"]
   }
 ];
 
