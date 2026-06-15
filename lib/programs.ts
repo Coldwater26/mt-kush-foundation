@@ -56,6 +56,17 @@ export const programEvents = [
     copy:
       "Volunteers can help build, paint, prep, and crew the Montana Kush derby car for Septemberfest in downtown Helena.",
     supports: ["Derby car build crew", "Race day volunteers", "United Way fundraiser", "Downtown Helena community event"]
+  },
+  {
+    title: "Symphony Under the Stars Food Drive",
+    date: "July 2026",
+    format: "Volunteer canned food drive",
+    location: "Carroll College, Helena",
+    eyebrow: "Food Drive",
+    icon: CalendarDays,
+    copy:
+      "Montana Kush Foundation volunteers will collect canned goods at the Sanders Street store and bring them to Symphony Under the Stars to support the Boy Scouts food drive with Helena Food Share.",
+    supports: ["Canned food collection", "Sanders Street store drop-off", "Boy Scouts food drive", "Helena Food Share"]
   }
 ];
 
