@@ -51,3 +51,11 @@ Do not treat the current placeholder lockup as a final legal logo.
 ## Donation Integration
 
 The Sponsor / Donate form is ready for a future donation provider such as Stripe, Donorbox, or Givebutter.
+
+## Grant application
+
+`public/grants.html` is the complete standalone grant page, exported unchanged to `/grants.html`. Navigation and the Programs page link to it. Edit that HTML directly; it uses the approved Foundation branding and six program areas.
+
+Applications request $500, $1,000, or $1,500. Required fields and the project budget are checked before a review screen. Applicants can edit their answers, then submit by HTTPS POST to FormSubmit for delivery to `pepper@montanakush.org`. Default CAPTCHA remains enabled. The page discloses FormSubmit and does not save data in browser storage.
+
+Before announcing applications are open, submit a clearly labeled test, activate the FormSubmit confirmation sent to `pepper@montanakush.org`, and verify a subsequent test arrives in that inbox. Delivery is not verified until this step is complete. No API key or Render server migration is required. Use the provider's confirmation screen; do not claim delivery based solely on client-side form validation.

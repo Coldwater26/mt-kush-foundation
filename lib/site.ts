@@ -1,7 +1,7 @@
 ﻿export const site = {
   name: "Montana Kush Community Foundation",
   url: "https://montanakush.org",
-  email: "info@montanakush.org",
+  email: "pepper@montanakush.org",
   sponsorUrl: "https://montanakush.com",
   tagline: "Supporting the communities that support us.",
   coreMission:
@@ -31,6 +31,7 @@
 export const navItems = [
   { href: "/about", label: "About" },
   { href: "/programs", label: "Programs" },
+  { href: "/grants.html", label: "Apply for Grants" },
   { href: "/media", label: "Media" },
   { href: "/merch", label: "Volunteer" },
   { href: "/impact", label: "Impact" },

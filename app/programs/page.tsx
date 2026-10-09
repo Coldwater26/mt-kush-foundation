@@ -122,6 +122,11 @@ export default function ProgramsPage() {
           </div>
         </div>
       </section>
+      <section className="bg-forest px-4 py-10 text-center text-cream">
+        <h2 className="text-3xl font-black">Apply for a community grant</h2>
+        <p className="mx-auto mt-4 max-w-2xl">Request $500, $1,000, or $1,500 for your Montana community project. Tell us who it will help and how you will use the funds.</p>
+        <ButtonLink href="/grants.html" className="mt-6 bg-gold text-forest">Apply for Grants</ButtonLink>
+      </section>
       <CTASection />
     </>
   );
