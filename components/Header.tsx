@@ -80,8 +80,7 @@ export function Header() {
         </div>
       ) : null}
       <div className="border-t border-forest/10 bg-forest text-cream">
-        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-4 py-2 sm:px-6 lg:px-8">
-          <p className="text-sm font-semibold">Community grants: $500, $1,000, and $1,500</p>
+        <div className="mx-auto flex max-w-7xl items-center justify-end px-4 py-2 sm:px-6 lg:px-8">
           <a href="/grants.html" className="inline-flex min-h-11 shrink-0 items-center justify-center border border-gold bg-gold px-4 py-2 text-sm font-bold text-forest underline-offset-4 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold">
             Apply for Grants <span aria-hidden="true" className="ml-2">→</span>
           </a>
