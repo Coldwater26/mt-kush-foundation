@@ -32,7 +32,7 @@ body{margin:0;background:#fbf7ed}#mk-grant-draft{max-width:1120px;margin:auto;co
 </div></section>
 <section class="mk-section"><div class="mk-step">03 / Your funding request</div><h2>Select an amount and explain how you will spend it</h2>
 <fieldset><legend>Grant amount requested *</legend><div class="mk-awards"><label class="mk-award"><input type="radio" name="Grant amount" value="$500" required>$500</label><label class="mk-award"><input type="radio" name="Grant amount" value="$1,000">$1,000</label><label class="mk-award"><input type="radio" name="Grant amount" value="$1,500">$1,500</label></div></fieldset>
-<div class="mk-grid"><label class="mk-field">Total project budget ($) *<input id="mk-budget" name="Total project budget" type="number" min="1" max="100000000" step="0.01" required></label>
+<div class="mk-grid"><label class="mk-field">Project budget *<input id="mk-budget" name="Project budget" type="text" required placeholder="Estimated amount, range, or explanation"><span class="mk-help">Use any numbers, words, or symbols to describe your budget. An exact total is not required.</span></label>
 <label class="mk-field">Other funding secured or pending<input name="Other funding" maxlength="300" placeholder="List sources and amounts, or enter none"><span class="mk-help">Optional</span></label>
 <label class="mk-field mk-full">How will you use the grant? *<textarea name="Use of grant funds" required maxlength="1500" placeholder="List each expense and estimated cost."></textarea><span class="mk-help">Your requested expenses should total the grant amount selected. Maximum 1,500 characters.</span></label>
 </div></section>
@@ -58,13 +58,6 @@ body{margin:0;background:#fbf7ed}#mk-grant-draft{max-width:1120px;margin:auto;co
     if (readyToSend) return;
     event.preventDefault();
     const data = new FormData(form);
-    const amount = Number(String(data.get('Grant amount')).replace(/[^0-9]/g, ''));
-    if (Number(data.get('Total project budget')) < amount) {
-      error.textContent = 'The total project budget must be at least the grant amount requested.';
-      error.hidden = false;
-      root.querySelector('#mk-budget').focus();
-      return;
-    }
     error.hidden = true;
     summary.replaceChildren();
     for (const [name, value] of data.entries()) {
