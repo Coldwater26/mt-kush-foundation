@@ -17,7 +17,7 @@ export function Header() {
           <FoundationLogo className="w-[142px] sm:w-[158px]" priority />
         </Link>
         <nav className="hidden items-center gap-3 lg:flex xl:gap-5" aria-label="Primary navigation">
-          {navItems.map((item) => (
+          {navItems.filter((item) => item.href !== "/grants.html").map((item) => (
             <Link
               key={item.href}
               href={item.href}
@@ -51,7 +51,7 @@ export function Header() {
       {open ? (
         <div className="border-t border-forest/10 bg-parchment px-4 py-5 lg:hidden">
           <nav className="grid gap-2" aria-label="Mobile navigation">
-            {navItems.map((item) => (
+            {navItems.filter((item) => item.href !== "/grants.html").map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
