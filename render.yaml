@@ -7,13 +7,6 @@ services:
     autoDeployTrigger: commit
     domains:
       - www.montanakush.org
-    routes:
-      - type: rewrite
-        source: /survey
-        destination: https://mkcf-store-partner-questionnaire.woollytern1.chatgpt.site/survey
-      - type: rewrite
-        source: /survey/*
-        destination: https://mkcf-store-partner-questionnaire.woollytern1.chatgpt.site/survey/*
     headers:
       - path: /survey
         name: Cache-Control
