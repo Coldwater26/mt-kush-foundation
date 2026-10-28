@@ -7,16 +7,18 @@ import { site } from "@/lib/site";
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
+  "@id": `${site.url}/#organization`,
   name: site.name,
   url: site.url,
   logo: `${site.url}/assets/montana-kush-logo.svg`,
   email: site.email,
-  founder: {
+  sponsor: {
     "@type": "Organization",
+    "@id": `${site.sponsorUrl}/#organization`,
     name: "Montana Kush",
     url: site.sponsorUrl
   },
-  sameAs: [site.sponsorUrl],
+  areaServed: { "@type": "State", name: "Montana" },
   description: site.legalMission,
   knowsAbout: [
     "Montana Media",
@@ -36,11 +38,11 @@ const organizationSchema = {
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
+  "@id": `${site.url}/#website`,
   name: site.name,
   url: site.url,
   publisher: {
-    "@type": "Organization",
-    name: site.name
+    "@id": `${site.url}/#organization`
   }
 };
 

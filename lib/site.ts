@@ -1,6 +1,8 @@
-﻿export const site = {
+import type { Metadata } from "next";
+
+export const site = {
   name: "Montana Kush Community Foundation",
-  url: "https://montanakush.org",
+  url: "https://www.montanakush.org",
   email: "pepper@montanakush.org",
   sponsorUrl: "https://montanakush.com",
   tagline: "Supporting the communities that support us.",
@@ -39,7 +41,7 @@ export const navItems = [
   { href: "/contact", label: "Contact" }
 ];
 
-export const pageMeta = {
+const pageMetaBase = {
   about: {
     title: "About",
     description:
@@ -53,7 +55,7 @@ export const pageMeta = {
   impact: {
     title: "Impact",
     description:
-      "Review estimated Montana Kush Community Foundation impact across grants, sponsorships, scholarships, people reached, events supported, and community partnerships."
+      "Review $350,000 in estimated historical Montana Kush community support, with Foundation reporting context, sponsorships, in-kind help, and local examples."
   },
   media: {
     title: "Montana Media",
@@ -87,3 +89,5 @@ export const pageMeta = {
   }
 };
 
+
+export const pageMeta = Object.fromEntries(Object.entries(pageMetaBase).map(([key,value]) => [key, { ...value, alternates: { canonical: `${site.url}/${key}` }, openGraph: { title: value.title, description: value.description, url: `${site.url}/${key}` } }])) as Record<keyof typeof pageMetaBase, Metadata>;

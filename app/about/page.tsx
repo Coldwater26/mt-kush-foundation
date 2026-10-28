@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Image from "next/image";
 import { CTASection } from "@/components/CTASection";
 import { SectionIntro } from "@/components/SectionIntro";
@@ -25,7 +25,11 @@ const sections = [
   },
   {
     title: "Founding Supporter: Montana Kush",
-    copy: "The Foundation was founded with support from Montana Kush as a long-term commitment to the Montana communities that helped build the company."
+    copy: "The Montana Kush Community Foundation is a Montana nonprofit corporation. Montana Kush is its founding supporter and a separate commercial business. This website covers Foundation programs and grants; Montana Kush’s commercial website is montanakush.com."
+  },
+  {
+    title: "Leadership",
+    copy: "Bryce Hulet is the board chair. Pepper Petersen is the executive director. For Foundation records, partnerships, or grant administration questions, email pepper@montanakush.org."
   },
   {
     title: "How People Connect",
@@ -59,7 +63,7 @@ export default function AboutPage() {
       <section className="topo-paper py-16">
         <div className="mx-auto grid max-w-7xl gap-5 px-4 sm:px-6 md:grid-cols-2 lg:grid-cols-3 lg:px-8">
           {sections.map((section) => (
-            <article key={section.title} className="border-t-4 border-forest bg-white p-6">
+            <article key={section.title} id={section.title === "Leadership" ? "leadership" : undefined} className="scroll-mt-40 border-t-4 border-forest bg-white p-6">
               <h2 className="mk-heading font-serif text-2xl font-black text-forest">{section.title}</h2>
               <p className="mt-4 text-sm leading-7 text-smoke">{section.copy}</p>
             </article>

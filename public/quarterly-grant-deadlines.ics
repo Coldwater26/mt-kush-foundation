@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Montana Kush Community Foundation//Quarterly Grants//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Montana Kush Community Foundation Grant Deadlines
+BEGIN:VEVENT
+UID:quarterly-grants-20261215@montanakush.org
+DTSTAMP:20261028T040000Z
+DTSTART;VALUE=DATE:20261215
+DTEND;VALUE=DATE:20261216
+RRULE:FREQ=MONTHLY;INTERVAL=3;BYMONTHDAY=15
+SUMMARY:Montana Kush Community Foundation grant deadline
+DESCRIPTION:Quarterly statewide grants. $15000 available each quarter.
+ $500\, $1000\, or $1500 awards. All-day deadline reminder only;
+ contact pepper@montanakush.org for submission-time questions.
+URL:https://www.montanakush.org/grant-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

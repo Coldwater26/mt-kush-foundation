@@ -90,6 +90,8 @@ export default function ImpactPage() {
         </div>
       </section>
 
+      <section className="bg-white px-4 py-8"><div className="mx-auto max-w-7xl"><h2 className="font-serif text-2xl font-black text-forest">How to read these figures</h2><p className="mt-3 max-w-4xl leading-8">The Foundation reports <strong>$350,000 in estimated historical Montana Kush community support</strong>. This includes several types of support and is distinct from the Foundation’s current $15,000 grant opportunity. The figures below are estimates, not audited results or an award ledger. <a href="/faq" className="font-bold underline">Read Foundation facts and grant details.</a></p></div></section>
+
       <section className="bg-basalt py-14 text-cream">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-8 flex flex-col justify-between gap-4 border-b border-cream/20 pb-5 sm:flex-row sm:items-end">
@@ -101,7 +103,7 @@ export default function ImpactPage() {
             </div>
             <p className="max-w-md text-sm font-semibold leading-7 text-cream">
               Working estimates based on historical community giving, typical event costs, partner support, sponsorships,
-              scholarships, and in-kind Foundation activity.
+              scholarships, and in-kind support. The $350,000 figure describes estimated historical Montana Kush giving, not an audited total or Foundation cash grants.
             </p>
           </div>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -121,7 +123,7 @@ export default function ImpactPage() {
                 Dollars become visible help.
               </h2>
               <p className="mt-5 text-base font-semibold leading-8 text-smoke">
-                A realistic annual giving range supports dozens of small, useful Montana moments: a team fee covered,
+                Community giving supports practical Montana needs: a team fee covered,
                 a veterans event backed, a fundraiser sponsored, a trail day stocked, a partner story documented.
               </p>
             </article>

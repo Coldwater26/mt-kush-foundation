@@ -14,6 +14,7 @@ export function Footer() {
         </div>
         <div>
           <h2 className="text-sm font-bold uppercase tracking-[0.12em] text-gold">Foundation</h2>
+          <Link href="/faq" className="mt-4 inline-block text-sm text-cream underline">Foundation facts & grant questions</Link><br/><Link href="/grant-calendar" className="mt-3 inline-block text-sm text-cream underline">Quarterly grant calendar</Link>
           <div className="mt-4 grid gap-3">
             {navItems.map((item) => (
               <Link key={item.href} href={item.href} className="text-sm text-cream hover:text-gold">

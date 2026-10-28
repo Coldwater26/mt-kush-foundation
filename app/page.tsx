@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import { ButtonLink } from "@/components/ButtonLink";
 import { FoundationLogo } from "@/components/FoundationLogo";
@@ -5,6 +6,8 @@ import { PartnerLogoStrip } from "@/components/PartnerLogoStrip";
 import { site } from "@/lib/site";
 import { FoundationVideo } from "@/components/FoundationVideo";
 import { media, videoSchema } from "@/lib/media";
+
+export const metadata: Metadata = { title: "Statewide Community Grants & Local Support", description: "The Montana Kush Community Foundation is a Montana nonprofit corporation supporting community projects statewide. Explore programs, $500–$1,500 grants, impact, and videos.", alternates: { canonical: site.url }, openGraph: { url: site.url, title: "Montana Kush Community Foundation — Statewide Community Support" } };
 
 const supportAreas = [
   {
@@ -94,6 +97,8 @@ export default function HomePage() {
       </section>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(videoSchema(media[0])).replace(/</g,"\\u003c")}} />
+      <section className="bg-white px-4 py-9"><div className="mx-auto max-w-7xl"><h2 className="font-serif text-2xl font-black text-forest">Community projects. Statewide support.</h2><p className="mt-3 max-w-4xl leading-8">The Montana Kush Community Foundation is a Montana nonprofit corporation supporting veterans, adult athletics, public education, local events, and community partnerships. Montana Kush is its founding supporter.</p><p className="mt-3 max-w-4xl leading-8">The Foundation offers <strong>$15,000 each quarter</strong> in awards of <strong>$500, $1,000, or $1,500</strong>. The next deadline for projects statewide is <strong>December 15, 2026</strong>; awards will be announced in <strong>January 2027</strong>.</p><p className="mt-4 font-bold"><a href="/grants.html" className="underline">Apply for a grant</a> · <a href="/faq" className="underline">Foundation facts & questions</a> · <a href="/grant-calendar" className="underline">Quarterly grant calendar</a></p></div></section>
+
       <section className="topo-white">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[0.34fr_0.66fr] lg:px-8">
           <div>
@@ -172,6 +177,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <section className="bg-white px-4 py-9"><div className="mx-auto max-w-7xl"><h2 className="font-serif text-2xl font-black text-forest">Community projects. Statewide support.</h2><p className="mt-3 max-w-4xl leading-8">The Montana Kush Community Foundation is a Montana nonprofit corporation supporting veterans, adult athletics, public education, local events, and community partnerships. Montana Kush is its founding supporter.</p><p className="mt-3 max-w-4xl leading-8">The Foundation offers <strong>$15,000 each quarter</strong> in awards of <strong>$500, $1,000, or $1,500</strong>. The next deadline for projects statewide is <strong>December 15, 2026</strong>; awards will be announced in <strong>January 2027</strong>.</p><p className="mt-4 font-bold"><a href="/grants.html" className="underline">Apply for a grant</a> · <a href="/faq" className="underline">Foundation facts & questions</a> · <a href="/grant-calendar" className="underline">Quarterly grant calendar</a></p></div></section>
 
       <section className="topo-white">
         <div className="mx-auto grid max-w-7xl gap-8 px-4 py-12 sm:px-6 lg:grid-cols-[0.36fr_0.64fr] lg:items-center lg:px-8">

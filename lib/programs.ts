@@ -1,4 +1,4 @@
-﻿import {
+import {
   BadgeCheck,
   BookOpenCheck,
   CalendarDays,
@@ -172,7 +172,7 @@ export const programs = [
 ];
 
 export const impactStats = [
-  { value: "$250K-$350K", label: "Estimated community support", note: "Grants, sponsorships, scholarships, and in-kind help" },
+  { value: "$350,000", label: "Estimated historical Montana Kush support", note: "Business giving, sponsorships, scholarships, and in-kind help; not a Foundation cash-grant total" },
   { value: "3K-5K", label: "Montanans reached", note: "Events, teams, veterans programs, education, and access support" },
   { value: "75+", label: "Local activations", note: "Trail days, tournaments, fundraisers, community nights, and partner projects" },
   { value: "500+", label: "Veterans and families touched", note: "Direct support, recreation, service projects, guides, and community events" },
