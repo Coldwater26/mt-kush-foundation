@@ -10,17 +10,23 @@ const supportAreas = [
   {
     title: "Veterans",
     copy: "Outdoor events, resource guides, service projects, veteran profiles, and partner support.",
-    image: "/assets/community-veterans.png"
+    image: "/assets/community-photos/veteran-service.jpg",
+    alt: "A Team Rubicon volunteer sorting donated supplies",
+    credit: "Illustrative veteran-service archive · Raekwon Jenkins / U.S. Army"
   },
   {
     title: "Athletics and recreation",
     copy: "Athletics, tournaments, adult leagues, youth leagues, equipment grants, and registration help.",
-    image: "/assets/community-sports.png"
+    image: "/assets/community-photos/hellgate-roller-derby.jpg",
+    alt: "Hellgate Roller Derby adult team in Missoula",
+    credit: "Hellgate Roller Derby · Team photo"
   },
   {
     title: "Community events",
     copy: "Local gatherings, fundraisers, public events, small-town projects, and event materials.",
-    image: "/assets/community-food-truck.png"
+    image: "/assets/community-photos/covellite-concert.jpg",
+    alt: "Laney Lou and the Bird Dogs performing at the Covellite Theatre",
+    credit: "Covellite Presents · Venue archive"
   },
   {
     title: "Education",
@@ -35,7 +41,9 @@ const supportAreas = [
   {
     title: "Local partnerships",
     copy: "Nonprofits, organizers, educators, athletics groups, veterans groups, and local leaders doing the work.",
-    image: "/assets/community-partners.png"
+    image: "/assets/community-photos/volunteer-crew.jpg",
+    alt: "Montana Kush volunteer crew with tools during a community cleanup",
+    credit: "Montana Kush volunteer crew"
   }
 ];
 
@@ -119,13 +127,14 @@ export default function HomePage() {
                 <div className="relative h-40 border-b-2 border-forest">
                   <Image
                     src={area.image}
-                    alt={`${area.title} in Montana`}
+                    alt={area.alt ?? `${area.title} in Montana`}
                     fill
                     className="object-cover"
                     sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                   />
                 </div>
                 <div className="p-6">
+                  {area.credit && <p className="mb-3 text-xs leading-5 text-smoke">{area.credit}</p>}
                   <h3 className="font-serif text-2xl font-black leading-tight text-forest">{area.title}</h3>
                   <p className="mt-4 text-base font-semibold leading-7 text-smoke">{area.copy}</p>
                 </div>

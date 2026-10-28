@@ -50,16 +50,16 @@ export default function PartnersPage() {
             copy="The Foundation works with veterans groups, athletics organizers, event crews, educators, storytellers, and local leaders across Montana."
             light
           />
-          <div className="relative min-h-[360px] overflow-hidden border-4 border-gold">
+          <div><div className="relative min-h-[360px] overflow-hidden border-4 border-gold">
             <Image
-              src="/assets/partners-hero-bozeman-veteran-housing.png"
-              alt="Bozeman Montana volunteers building veteran housing"
+              src="/assets/community-photos/covellite-concert.jpg"
+              alt="Laney Lou and the Bird Dogs on stage at the Covellite Theatre — venue archive"
               fill
               priority
               className="object-cover"
               sizes="(min-width: 1024px) 48vw, 100vw"
             />
-          </div>
+          </div><p className="mt-3 text-xs leading-5 text-cream">Covellite Presents · Laney Lou and the Bird Dogs · Venue archive</p></div>
         </div>
       </section>
 

@@ -79,11 +79,11 @@ export default function ImpactPage() {
           />
           <div className="relative min-h-[360px] overflow-hidden border-4 border-gold">
             <Image
-              src="/assets/impact-hero-miles-city-bucking-horse.png"
-              alt="Miles City bucking horse event with riders, volunteers, and spectators"
+              src="/assets/community-photos/covellite-check.jpg"
+              alt="Montana Kush presents a $4,800 check to the Covellite Theatre in Butte following basement flooding"
               fill
               priority
-              className="object-cover"
+              className="object-contain bg-forest"
               sizes="(min-width: 1024px) 48vw, 100vw"
             />
           </div>

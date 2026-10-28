@@ -23,8 +23,8 @@ export default function ProgramsPage() {
           />
           <div className="relative min-h-[360px] overflow-hidden border-4 border-gold">
             <Image
-              src="/assets/programs-hero-veterans-trailhead.png"
-              alt="Montana veteran trailhead support day"
+              src="/assets/community-photos/volunteer-crew.jpg"
+              alt="Montana Kush volunteer crew taking part in a community cleanup"
               fill
               priority
               className="object-cover"
