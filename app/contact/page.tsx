@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { InquiryDelivery } from "@/components/InquiryDelivery";
 import { SectionIntro } from "@/components/SectionIntro";
 import { pageMeta, site } from "@/lib/site";
 
@@ -36,24 +37,25 @@ export default function ContactPage() {
               {site.email}
             </a>
           </div>
-          <form className="grid gap-4 border-t-4 border-forest bg-white p-6">
+          <form action={`https://formsubmit.co/${site.email}`} method="POST" className="grid gap-4 border-t-4 border-forest bg-white p-6">
+            <InquiryDelivery subject="Contact inquiry" />
             <div className="grid gap-4 md:grid-cols-2">
               <label className="grid gap-2 text-sm font-semibold text-forest">
                 Name
-                <input className="rounded-md border border-forest/20 px-3 py-3 text-basalt outline-none focus:border-copper" />
+                <input name="Name" required autoComplete="name" className="rounded-md border border-forest/20 px-3 py-3 text-basalt outline-none focus:border-copper" />
               </label>
               <label className="grid gap-2 text-sm font-semibold text-forest">
                 Email
-                <input className="rounded-md border border-forest/20 px-3 py-3 text-basalt outline-none focus:border-copper" type="email" />
+                <input name="email" required autoComplete="email" className="rounded-md border border-forest/20 px-3 py-3 text-basalt outline-none focus:border-copper" type="email" />
               </label>
             </div>
             <label className="grid gap-2 text-sm font-semibold text-forest">
               Organization
-              <input className="rounded-md border border-forest/20 px-3 py-3 text-basalt outline-none focus:border-copper" />
+              <input name="Organization" autoComplete="organization" className="rounded-md border border-forest/20 px-3 py-3 text-basalt outline-none focus:border-copper" />
             </label>
             <label className="grid gap-2 text-sm font-semibold text-forest">
               Program interest
-              <select className="rounded-md border border-forest/20 px-3 py-3 text-basalt outline-none focus:border-copper">
+              <select name="Program interest" className="rounded-md border border-forest/20 px-3 py-3 text-basalt outline-none focus:border-copper">
                 <option>General</option>
                 <option>Veterans and service</option>
                 <option>Athletics and recreation</option>
@@ -64,9 +66,9 @@ export default function ContactPage() {
             </label>
             <label className="grid gap-2 text-sm font-semibold text-forest">
               Message
-              <textarea className="min-h-36 rounded-md border border-forest/20 px-3 py-3 text-basalt outline-none focus:border-copper" />
+              <textarea name="Message" required className="min-h-36 rounded-md border border-forest/20 px-3 py-3 text-basalt outline-none focus:border-copper" />
             </label>
-            <button type="button" className="rounded-md bg-forest px-5 py-3 text-sm font-bold uppercase tracking-[0.08em] text-cream transition hover:bg-copper">
+            <button type="submit" className="rounded-md bg-forest px-5 py-3 text-sm font-bold uppercase tracking-[0.08em] text-cream transition hover:bg-copper">
               Send Message
             </button>
           </form>
