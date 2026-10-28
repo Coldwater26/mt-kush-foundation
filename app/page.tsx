@@ -16,7 +16,7 @@ const supportAreas = [
   },
   {
     title: "Athletics and recreation",
-    copy: "Athletics, tournaments, adult leagues, youth leagues, equipment grants, and registration help.",
+    copy: "Athletics, tournaments, adult leagues, equipment grants, and registration help.",
     image: "/assets/community-photos/hellgate-roller-derby.jpg",
     alt: "Hellgate Roller Derby adult team in Missoula",
     credit: "Hellgate Roller Derby · Team photo"

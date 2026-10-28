@@ -24,7 +24,7 @@ const supportChannels = [
   {
     title: "Scholarships",
     value: "$45K-$70K",
-    copy: "Registration help, equipment support, training costs, youth and adult athletics, education, and participation access.",
+    copy: "Registration help, equipment support, training costs, adult athletics, education, and participation access.",
     icon: Landmark
   },
   {

@@ -7,7 +7,7 @@
   coreMission:
     "The Montana Kush Community Foundation shows up for Montana by supporting veterans, families, local athletics, community events, education, patient access, and neighbors facing real needs close to home.",
   legalMission:
-    "The Montana Kush Community Foundation supports charitable, educational, health-related, civic, and community-based efforts that improve quality of life for Montanans, including support for veterans, families, youth and adult athletics, emergency needs, public education, patient access, local events, and nonprofit partnerships across Montana.",
+    "The Montana Kush Community Foundation supports charitable, educational, health-related, civic, and community-based efforts that improve quality of life for Montanans, including support for veterans, families, adult athletics, emergency needs, public education, patient access, local events, and nonprofit partnerships across Montana.",
   description:
     "The Montana Kush Community Foundation supports charitable, educational, health-related, civic, and community-based efforts that improve quality of life for Montanans.",
   keywords: [
@@ -25,7 +25,7 @@
     "Montana Kush community partnerships"
   ],
   disclaimer:
-    "The Montana Kush Community Foundation supports charitable, educational, health-related, civic, and community-based efforts that improve quality of life for Montanans, including support for veterans, families, youth and adult athletics, emergency needs, public education, patient access, local events, and nonprofit partnerships across Montana."
+    "The Montana Kush Community Foundation supports charitable, educational, health-related, civic, and community-based efforts that improve quality of life for Montanans, including support for veterans, families, adult athletics, emergency needs, public education, patient access, local events, and nonprofit partnerships across Montana."
 };
 
 export const navItems = [

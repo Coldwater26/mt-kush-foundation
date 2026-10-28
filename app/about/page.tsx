@@ -13,7 +13,7 @@ const sections = [
   },
   {
     title: "Who We Help",
-    copy: "Veterans, service organizations, athletics groups, tournaments, adult and youth recreation, event organizers, patients, consumers, community educators, local nonprofits, and Montana families."
+    copy: "Veterans, service organizations, athletics groups, tournaments, adult recreation, event organizers, patients, consumers, community educators, local nonprofits, and Montana families."
   },
   {
     title: "What We Support",

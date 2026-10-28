@@ -65,8 +65,8 @@ export const programEvents = [
     eyebrow: "Food Drive",
     icon: CalendarDays,
     copy:
-      "Montana Kush Foundation volunteers will collect canned goods at the Sanders Street store and bring them to Symphony Under the Stars to support the Boy Scouts food drive with Helena Food Share.",
-    supports: ["Canned food collection", "Sanders Street store drop-off", "Boy Scouts food drive", "Helena Food Share"]
+      "Montana Kush Foundation volunteers will collect canned goods at the Sanders Street store and bring them to Symphony Under the Stars to support the food drive benefiting Helena Food Share.",
+    supports: ["Canned food collection", "Sanders Street store drop-off", "Community food drive", "Helena Food Share"]
   }
 ];
 
@@ -94,10 +94,10 @@ export const programs = [
     icon: Trophy,
     quote: "Athletics, tournaments, outdoor events, and community gatherings are where Montana connection gets built.",
     purpose:
-      "Support athletics, tournaments, adult leagues, youth leagues, veterans recreation, first responder recreation, outdoor events, equipment grants, and community gatherings.",
+      "Support athletics, tournaments, adult leagues, veterans recreation, first responder recreation, outdoor events, equipment grants, and community gatherings.",
     initiatives: [
       "Team and tournament sponsorships",
-      "Adult, youth, veteran, and first responder recreation",
+      "Adult recreation for veterans, first responders, and community members",
       "Outdoor events and community gatherings",
       "Equipment grants",
       "Registration scholarships and local sports storytelling"
