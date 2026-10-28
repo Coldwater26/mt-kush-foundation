@@ -1,0 +1,9 @@
+{
+  "sameAs": ["https://www.montanakush.org/about"],
+  "funder": {
+    "@type": "Organization",
+    "@id": "https://montanakush.com/#organization",
+    "name": "Montana Kush",
+    "url": "https://montanakush.com"
+  }
+}

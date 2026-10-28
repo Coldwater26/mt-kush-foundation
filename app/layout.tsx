@@ -3,6 +3,7 @@ import "./globals.css";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { site } from "@/lib/site";
+import organizationLinks from "@/lib/organization-links.json";
 
 const organizationSchema = {
   "@context": "https://schema.org",
@@ -12,12 +13,8 @@ const organizationSchema = {
   url: site.url,
   logo: `${site.url}/assets/montana-kush-logo.svg`,
   email: site.email,
-  sponsor: {
-    "@type": "Organization",
-    "@id": `${site.sponsorUrl}/#organization`,
-    name: "Montana Kush",
-    url: site.sponsorUrl
-  },
+  ...organizationLinks,
+  sponsor: organizationLinks.funder,
   areaServed: { "@type": "State", name: "Montana" },
   description: site.legalMission,
   knowsAbout: [

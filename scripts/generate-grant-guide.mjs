@@ -3,6 +3,7 @@ import { readFile, writeFile } from "node:fs/promises";
 // Generate crawlable HTML and its matching schema from the same content.
 const root = new URL("../", import.meta.url);
 const catalog = JSON.parse(await readFile(new URL("lib/media-catalog.json", root), "utf8"));
+const organizationLinks = JSON.parse(await readFile(new URL("lib/organization-links.json", root), "utf8"));
 const video = catalog.find((item) => item.slug === "microgrant-application-guide");
 if (!video?.transcript) throw new Error("The grant guide requires its recorded transcript.");
 const base = "https://www.montanakush.org";
@@ -21,6 +22,26 @@ const graph = {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "Organization", "@id": `${base}/#organization`,
+      name: "Montana Kush Community Foundation", url: base,
+      ...organizationLinks, sponsor: organizationLinks.funder,
+    },
+    {
+      "@type": "WebPage", "@id": `${page}#page`, url: page,
+      name: "Apply for grants | Montana Kush Community Foundation",
+      about: { "@id": `${base}/#organization` },
+      publisher: { "@id": `${base}/#organization` },
+      hasPart: [{ "@id": videoId }, { "@id": `${page}#how-to-apply` }, { "@id": `${base}${video.transcriptFile}` }],
+      relatedLink: [`${base}/grant-calendar`, `${base}/programs`, `${base}/faq`],
+    },
+    {
+      "@type": "DigitalDocument", "@id": `${base}${video.transcriptFile}`,
+      name: "Grant application tutorial — full transcript",
+      url: `${base}${video.transcriptFile}`, encodingFormat: "text/plain",
+      about: { "@id": videoId }, inLanguage: "en-US",
+      publisher: { "@id": `${base}/#organization` },
+    },
+    {
       "@type": "VideoObject", "@id": videoId,
       name: video.title, description: video.description,
       thumbnailUrl: [`${base}${video.poster}`],
@@ -28,6 +49,8 @@ const graph = {
       duration: `PT${video.seconds}S`, contentUrl: `${base}${video.video}`,
       url: `${base}/media/${video.slug}`, inLanguage: "en-US",
       transcript: video.transcript,
+      caption: { "@type": "MediaObject", name: "English captions", contentUrl: `${base}${video.captions}`, encodingFormat: "text/vtt", inLanguage: "en-US" },
+      subjectOf: { "@id": `${base}${video.transcriptFile}` },
       publisher: { "@type": "Organization", "@id": `${base}/#organization`, name: "Montana Kush Community Foundation", url: base },
     },
     {
