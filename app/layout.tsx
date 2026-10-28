@@ -41,11 +41,6 @@ const websiteSchema = {
   publisher: {
     "@type": "Organization",
     name: site.name
-  },
-  potentialAction: {
-    "@type": "SearchAction",
-    target: `${site.url}/media?search={search_term_string}`,
-    "query-input": "required name=search_term_string"
   }
 };
 

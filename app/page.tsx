@@ -3,6 +3,8 @@ import { ButtonLink } from "@/components/ButtonLink";
 import { FoundationLogo } from "@/components/FoundationLogo";
 import { PartnerLogoStrip } from "@/components/PartnerLogoStrip";
 import { site } from "@/lib/site";
+import { FoundationVideo } from "@/components/FoundationVideo";
+import { media, videoSchema } from "@/lib/media";
 
 const supportAreas = [
   {
@@ -42,9 +44,9 @@ export default function HomePage() {
     <>
       <section className="mk-topographic-panel overflow-hidden">
         <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
-          <div className="relative grid gap-8 lg:min-h-[620px] lg:grid-cols-[560px_1fr] lg:items-center">
+          <div className="relative grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
             <div className="relative z-10 max-w-[560px]">
-              <FoundationLogo className="w-[320px] shadow-[12px_12px_0_rgba(199,155,69,0.28)] sm:w-[455px] lg:w-[520px]" priority />
+              <FoundationLogo className="w-full max-w-[360px] shadow-[12px_12px_0_rgba(199,155,69,0.28)]" priority />
               <a
                 href={site.sponsorUrl}
                 className="mt-6 inline-flex border-l-4 border-copper bg-white px-4 py-3 text-xs font-black uppercase tracking-[0.12em] text-copper shadow-[8px_8px_0_rgba(23,55,45,0.12)] underline-offset-4 transition hover:text-forest hover:underline"
@@ -53,20 +55,16 @@ export default function HomePage() {
               >
                 Supported by Montana Kush
               </a>
-              <h1 className="mt-10 max-w-[520px] font-serif text-[3rem] font-black leading-[0.96] text-forest sm:text-[3.45rem]">
+              <h1 className="mt-8 max-w-[520px] font-serif text-4xl font-black leading-tight text-forest sm:text-5xl">
                 {site.tagline}
               </h1>
             </div>
 
-            <div className="relative min-h-[360px] overflow-hidden border-[6px] border-white shadow-[18px_18px_0_rgba(23,55,45,0.18)] lg:absolute lg:bottom-14 lg:right-0 lg:top-14 lg:w-[52%]">
-              <Image
-                src="/assets/home-hero-community-night.png"
-                alt="Montana community food truck night with volunteers and neighbors"
-                fill
-                priority
-                className="object-cover"
-                sizes="(min-width: 1024px) 52vw, 100vw"
-              />
+            <div className="min-w-0">
+              <p className="mb-3 text-sm font-black uppercase tracking-widest text-copper">Our featured film · 60 seconds</p>
+              <div className="overflow-hidden border-4 border-white shadow-[12px_12px_0_rgba(23,55,45,0.18)]"><FoundationVideo video={media[0]} /></div>
+              <p className="mt-6 text-lg font-semibold leading-8 text-forest">See how Montana Kush’s history of giving is helping shape a new chapter of community support across Montana.</p>
+              <div className="mt-4 flex flex-wrap gap-4 font-bold text-forest underline underline-offset-4"><a href="/media/community-impact#transcript">Read the film transcript</a><a href="/media">All videos & transcripts</a><a href="/grants.html">Apply for a grant →</a></div>
             </div>
           </div>
         </div>
@@ -87,6 +85,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(videoSchema(media[0])).replace(/</g,"\\u003c")}} />
       <section className="topo-white">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[0.34fr_0.66fr] lg:px-8">
           <div>
