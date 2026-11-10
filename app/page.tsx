@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { PressAnnouncement } from "@/components/PressAnnouncement";
 import Image from "next/image";
 import { ButtonLink } from "@/components/ButtonLink";
 import { FoundationLogo } from "@/components/FoundationLogo";
@@ -53,6 +54,7 @@ const supportAreas = [
 export default function HomePage() {
   return (
     <>
+      <PressAnnouncement />
       <section className="mk-topographic-panel overflow-hidden">
         <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
           <div className="relative grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">

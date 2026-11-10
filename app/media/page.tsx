@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
+import { PressAnnouncement } from "@/components/PressAnnouncement";
 import Link from "next/link";
 import { FoundationVideo } from "@/components/FoundationVideo";
 import { media } from "@/lib/media";
 import { site } from "@/lib/site";
 export const metadata:Metadata={title:"Videos, Media & Transcripts",description:"Watch Montana Kush Community Foundation films and grant guides. Read complete transcripts and download 60-, 30-, and 15-second videos, vertical editions, and captions.",alternates:{canonical:`${site.url}/media`}};
 export default function MediaPage(){return <>
+  <PressAnnouncement />
   <section className="topo-forest text-cream"><div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
     <p className="text-sm font-black uppercase tracking-widest text-gold">Montana Media</p><h1 className="mt-4 font-serif text-4xl font-black sm:text-6xl">The stories behind the support.</h1>
     <p className="mt-5 max-w-3xl text-xl leading-8">Foundation films, community updates, and practical grant guidance. Watch, read the full transcripts, or download a version to share.</p>
