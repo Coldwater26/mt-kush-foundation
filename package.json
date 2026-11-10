@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "node scripts/generate-grant-guide.mjs && next build",
+    "build": "node scripts/generate-grant-guide.mjs && next build && node scripts/add-analytics.mjs",
     "preview": "node scripts/serve-static.mjs",
     "start": "next start",
     "lint": "next lint"
