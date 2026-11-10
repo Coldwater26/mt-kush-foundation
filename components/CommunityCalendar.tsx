@@ -38,7 +38,7 @@ export function CommunityCalendar() {
     </div>
     <p className="mt-5 text-sm leading-7 text-smoke">Campaign details: <a className="underline" href="https://www.montana.edu/canthegriz/">Can the Griz</a> · <a className="underline" href="https://missoulafoodbank.org/get-involved/events/can-the-cats">Can the Cats</a>. For Gallatin Valley donations, HRDC needs collected food at 206 E. Griffin Dr., Bozeman, by November 20 at 5 p.m.</p>
     <section id="mario-kart" className="mt-12 scroll-mt-40 overflow-hidden border-2 border-forest" aria-labelledby="kart-heading">
-      <Image src="/assets/mario-kart-rainbow-road.png" alt="A glowing rainbow racetrack sweeping through a star-filled sky" width={1672} height={941} className="max-h-[440px] w-full object-cover" sizes="100vw"/>
+      <Image src="/assets/montana-kush-racing-crew.png" alt="Illustrated Montana Kush crew racing on a rainbow track, with Pepper in a cowboy hat driving a green and gold monster kart" width={1672} height={941} className="h-auto w-full" sizes="100vw"/>
       <div className="bg-forest p-6 text-cream sm:p-8">
         <div className="flex items-center justify-between"><p className="text-sm font-black uppercase tracking-widest text-gold">Statewide · Winter 2027 · 21+</p><Flag size={32} aria-hidden/></div>
         <h3 id="kart-heading" className="mt-4 font-serif text-4xl font-black sm:text-5xl">Mario Kart tournament series</h3>
@@ -46,8 +46,8 @@ export function CommunityCalendar() {
         <p className="mt-3 max-w-3xl leading-7">Montana Kush, Lewis & Clark Brewing, and the Covellite are planning a statewide series for adult racers. Save these planned dates. Start times, final venue details, entry fees, and registration links will be posted when confirmed.</p>
       </div>
       <div className="grid gap-px bg-forest md:grid-cols-2">
-        {kartStops.map((stop, index) => <article key={stop.town} className="overflow-hidden bg-white">
-          <div className="relative h-32"><Image src="/assets/mario-kart-rainbow-road.png" alt="" fill className="object-cover" style={{objectPosition: `${index * 30}% ${25 + index * 20}%`}} sizes="(min-width: 768px) 50vw, 100vw"/></div>
+        {kartStops.map(stop => <article key={stop.town} className="overflow-hidden bg-white">
+          <div className="relative aspect-video"><Image src="/assets/montana-kush-racing-crew.png" alt="" fill className="object-contain" sizes="(min-width: 768px) 50vw, 100vw"/></div>
           <div className="p-6 sm:p-8">
           <div className="flex items-center justify-between gap-3"><p className="text-xs font-black uppercase tracking-widest text-copper">{stop.status}</p><Gamepad2 className="text-forest" aria-hidden/></div>
           <h4 className="mt-3 font-serif text-3xl font-black text-forest">{stop.town}</h4>
