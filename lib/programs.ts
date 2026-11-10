@@ -1,7 +1,6 @@
 import {
   BadgeCheck,
   BookOpenCheck,
-  CalendarDays,
   Clapperboard,
   HeartHandshake,
   Landmark,
@@ -31,42 +30,6 @@ export const fundingPaths = [
     icon: BookOpenCheck,
     copy:
       "Help with registrations, equipment, education, training, resource access, and participation costs for Montanans who need it."
-  }
-];
-
-export const programEvents = [
-  {
-    title: "Cannabis for Conservation",
-    date: "Sept. 19, 2026",
-    format: "Frisbee golf tournament",
-    location: "Montana",
-    eyebrow: "Foundation Event",
-    icon: CalendarDays,
-    copy:
-      "A community-forward tournament built around outdoor recreation, conservation support, local sponsorships, volunteer energy, and Montana Stories coverage.",
-    supports: ["Conservation projects", "Local athletics", "Volunteer participation", "Montana Stories recap"]
-  },
-  {
-    title: "Montana Kush Derby Car Build",
-    date: "Sept. 11-13, 2026",
-    format: "Helena Septemberfest Soapbox Derby",
-    location: "Downtown Helena",
-    eyebrow: "Volunteer Build",
-    icon: CalendarDays,
-    copy:
-      "Volunteers can help build, paint, prep, and crew the Montana Kush derby car for Septemberfest in downtown Helena.",
-    supports: ["Derby car build crew", "Race day volunteers", "United Way fundraiser", "Downtown Helena community event"]
-  },
-  {
-    title: "Symphony Under the Stars Food Drive",
-    date: "July 2026",
-    format: "Volunteer canned food drive",
-    location: "Carroll College, Helena",
-    eyebrow: "Food Drive",
-    icon: CalendarDays,
-    copy:
-      "Montana Kush Foundation volunteers will collect canned goods at the Sanders Street store and bring them to Symphony Under the Stars to support the food drive benefiting Helena Food Share.",
-    supports: ["Canned food collection", "Sanders Street store drop-off", "Community food drive", "Helena Food Share"]
   }
 ];
 
@@ -212,4 +175,3 @@ export const stories = [
       "Public education explains patient access, consumer choice, civic participation, and community reinvestment."
   }
 ];
-
